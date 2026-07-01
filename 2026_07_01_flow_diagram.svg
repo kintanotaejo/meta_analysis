@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 920" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <style>
+    .box { fill: #ffffff; stroke: #333333; stroke-width: 1.5; }
+    .exbox { fill: #fdf3f3; stroke: #b33; stroke-width: 1.3; }
+    .title { font-size: 15px; font-weight: bold; fill: #111; }
+    .txt { font-size: 13px; fill: #222; }
+    .small { font-size: 12px; fill: #444; }
+    .arrow { stroke: #333; stroke-width: 1.6; marker-end: url(#arrowhead); fill: none; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <text x="400" y="30" text-anchor="middle" class="title" font-size="18">
+    IgG予防投与の感染症予防効果 (血液悪性腫瘍・非HSCT) PRISMA フロー図
+  </text>
+
+  <!-- Identification -->
+  <rect x="230" y="55" width="340" height="60" class="box" rx="6"/>
+  <text x="400" y="78" text-anchor="middle" class="txt">PubMed(paper-search-mcp)検索により同定</text>
+  <text x="400" y="98" text-anchor="middle" class="txt" font-weight="bold">n = 104(延べ、19クエリ)</text>
+  <line x1="400" y1="115" x2="400" y2="150" class="arrow"/>
+
+  <!-- Dedup -->
+  <rect x="230" y="150" width="340" height="55" class="box" rx="6"/>
+  <text x="400" y="175" text-anchor="middle" class="txt">重複除去後</text>
+  <text x="400" y="195" text-anchor="middle" class="txt" font-weight="bold">n = 78</text>
+  <line x1="400" y1="205" x2="400" y2="240" class="arrow"/>
+
+  <!-- Screening -->
+  <rect x="230" y="240" width="340" height="55" class="box" rx="6"/>
+  <text x="400" y="263" text-anchor="middle" class="txt">タイトル・抄録スクリーニング</text>
+  <text x="400" y="283" text-anchor="middle" class="txt" font-weight="bold">n = 78</text>
+  <line x1="400" y1="295" x2="400" y2="335" class="arrow"/>
+  <line x1="400" y1="267" x2="600" y2="267" class="arrow"/>
+  <rect x="600" y="235" width="185" height="90" class="exbox" rx="6"/>
+  <text x="692" y="255" text-anchor="middle" class="small" font-weight="bold">除外 n = 71</text>
+  <text x="692" y="273" text-anchor="middle" class="small">非RCT: 64</text>
+  <text x="692" y="290" text-anchor="middle" class="small">PICO不一致(小児/</text>
+  <text x="692" y="305" text-anchor="middle" class="small">HSCT/投与経路): 7</text>
+
+  <!-- Full text -->
+  <rect x="230" y="335" width="340" height="55" class="box" rx="6"/>
+  <text x="400" y="358" text-anchor="middle" class="txt">フルテキスト適格性評価</text>
+  <text x="400" y="378" text-anchor="middle" class="txt" font-weight="bold">n = 7</text>
+  <line x1="400" y1="390" x2="400" y2="430" class="arrow"/>
+  <line x1="400" y1="362" x2="600" y2="362" class="arrow"/>
+  <rect x="600" y="330" width="185" height="90" class="exbox" rx="6"/>
+  <text x="692" y="350" text-anchor="middle" class="small" font-weight="bold">除外 n = 2</text>
+  <text x="692" y="368" text-anchor="middle" class="small">重複試験報告: 1</text>
+  <text x="692" y="385" text-anchor="middle" class="small">(PMID 7803248)</text>
+  <text x="692" y="400" text-anchor="middle" class="small">アウトカム不一致: 1</text>
+  <text x="692" y="415" text-anchor="middle" class="small">(PMID 8233289)</text>
+
+  <!-- Included -->
+  <rect x="230" y="430" width="340" height="60" class="box" rx="6" fill="#eef6ee" stroke="#2a7a2a"/>
+  <text x="400" y="453" text-anchor="middle" class="txt">定性的統合に採用</text>
+  <text x="400" y="475" text-anchor="middle" class="txt" font-weight="bold">n = 5</text>
+
+  <!-- Included list -->
+  <rect x="120" y="520" width="560" height="220" class="box" rx="6" fill="#fbfbfb"/>
+  <text x="400" y="545" text-anchor="middle" class="txt" font-weight="bold">採用文献一覧</text>
+  <text x="140" y="575" class="small">1. Gale RP, et al. N Engl J Med. 1988 (CLL, IVIG vs placebo) PMID:2901668</text>
+  <text x="140" y="600" class="small">2. Chapel HM, et al. Br J Haematol. 1994 (骨髄腫, IVIg vs placebo) PMID:7909099</text>
+  <text x="140" y="625" class="small">3. Chapel H, et al. 1991 (CLL/リンパ腫, IVIg vs 生食) PMID:1864637</text>
+  <text x="140" y="650" class="small">4. Gamm H, et al. 1994 (CLL, 500 vs 250mg/kg) PMID:8033428</text>
+  <text x="140" y="675" class="small">5. Molica S, et al. 1996 (CLL, 低用量IVIG vs 無治療) PMID:8641639</text>
+  <text x="140" y="710" class="small" fill="#666">作成日: 2026-07-01 / データソース: PubMed(paper-search-mcp)</text>
+</svg>
