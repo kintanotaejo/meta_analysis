@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" font-family="Helvetica, Arial, sans-serif">
+  <style>
+    .box { fill: #ffffff; stroke: #333333; stroke-width: 1.5; }
+    .title { font-size: 15px; font-weight: bold; fill: #111111; }
+    .txt { font-size: 12.5px; fill: #111111; }
+    .arrow { stroke: #333333; stroke-width: 1.5; marker-end: url(#arrow); }
+    .sidebox { fill: #f5f5f5; stroke: #888888; stroke-width: 1; }
+    .sidetxt { font-size: 11.5px; fill: #333333; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#333333"/>
+    </marker>
+  </defs>
+
+  <text x="360" y="30" text-anchor="middle" font-size="18" font-weight="bold">Study Selection Flow Diagram</text>
+  <text x="360" y="50" text-anchor="middle" font-size="12" fill="#555555">予防的免疫グロブリン投与(IVIg/SCIg)による感染症予防効果:成人血液悪性腫瘍(非移植)患者を対象としたRCT</text>
+
+  <!-- Identification -->
+  <rect x="220" y="75" width="280" height="60" rx="6" class="box"/>
+  <text x="360" y="98" text-anchor="middle" class="title">Records identified via PubMed</text>
+  <text x="360" y="118" text-anchor="middle" class="txt">(n = 712)</text>
+
+  <rect x="480" y="80" width="220" height="70" rx="6" class="sidebox"/>
+  <text x="490" y="98" class="sidetxt">Query:</text>
+  <text x="490" y="112" class="sidetxt">(Prophylaxis OR replacement)</text>
+  <text x="490" y="126" class="sidetxt">AND (immunoglobulin) AND</text>
+  <text x="490" y="140" class="sidetxt">(myeloma OR leukemia OR</text>
+  <text x="490" y="152" class="sidetxt" style="display:none"></text>
+
+  <line x1="360" y1="135" x2="360" y2="165" class="arrow"/>
+
+  <!-- Dedup -->
+  <rect x="220" y="165" width="280" height="60" rx="6" class="box"/>
+  <text x="360" y="188" text-anchor="middle" class="title">Duplicates removed (PMID)</text>
+  <text x="360" y="208" text-anchor="middle" class="txt">→ 467 unique records</text>
+
+  <rect x="20" y="170" width="180" height="50" rx="6" class="sidebox"/>
+  <text x="30" y="190" class="sidetxt">Removed as duplicate:</text>
+  <text x="30" y="206" class="sidetxt">n = 245</text>
+
+  <line x1="360" y1="225" x2="360" y2="255" class="arrow"/>
+
+  <!-- Title screening -->
+  <rect x="220" y="255" width="280" height="60" rx="6" class="box"/>
+  <text x="360" y="278" text-anchor="middle" class="title">Title screening</text>
+  <text x="360" y="298" text-anchor="middle" class="txt">(n = 467)</text>
+
+  <rect x="20" y="260" width="180" height="90" rx="6" class="sidebox"/>
+  <text x="30" y="278" class="sidetxt">Excluded: n = 172</text>
+  <text x="30" y="294" class="sidetxt">・移植/小児対象</text>
+  <text x="30" y="308" class="sidetxt">・review/動物実験</text>
+  <text x="30" y="322" class="sidetxt">・non-RCT publication type</text>
+
+  <line x1="360" y1="315" x2="360" y2="345" class="arrow"/>
+
+  <!-- Abstract screening -->
+  <rect x="220" y="345" width="280" height="60" rx="6" class="box"/>
+  <text x="360" y="368" text-anchor="middle" class="title">Abstract screening</text>
+  <text x="360" y="388" text-anchor="middle" class="txt">(n = 295)</text>
+
+  <rect x="20" y="350" width="180" height="90" rx="6" class="sidebox"/>
+  <text x="30" y="368" class="sidetxt">Excluded: n = 279</text>
+  <text x="30" y="384" class="sidetxt">・PICO非該当(介入/対象/</text>
+  <text x="30" y="398" class="sidetxt">アウトカム不一致)</text>
+  <text x="30" y="412" class="sidetxt">・non-RCT design</text>
+
+  <line x1="360" y1="405" x2="360" y2="435" class="arrow"/>
+
+  <!-- Full text -->
+  <rect x="220" y="435" width="280" height="60" rx="6" class="box"/>
+  <text x="360" y="458" text-anchor="middle" class="title">Full-text assessed for eligibility</text>
+  <text x="360" y="478" text-anchor="middle" class="txt">(n = 16)</text>
+
+  <rect x="20" y="440" width="180" height="120" rx="6" class="sidebox"/>
+  <text x="30" y="458" class="sidetxt">Excluded: n = 7</text>
+  <text x="30" y="474" class="sidetxt">・同一試験の重複報告: 3</text>
+  <text x="30" y="488" class="sidetxt">・アウトカム不一致</text>
+  <text x="30" y="502" class="sidetxt">(免疫学的指標のみ): 1</text>
+  <text x="30" y="516" class="sidetxt">・介入/対象PICO非該当: 3</text>
+
+  <line x1="360" y1="495" x2="360" y2="525" class="arrow"/>
+
+  <!-- Included -->
+  <rect x="200" y="525" width="320" height="70" rx="6" class="box" fill="#eef6ee"/>
+  <text x="360" y="552" text-anchor="middle" class="title">Studies included in qualitative synthesis</text>
+  <text x="360" y="575" text-anchor="middle" class="txt" font-weight="bold">(n = 9 RCTs)</text>
+
+  <!-- Included list -->
+  <rect x="120" y="615" width="480" height="255" rx="6" class="box"/>
+  <text x="360" y="638" text-anchor="middle" font-size="13" font-weight="bold">採用文献一覧 (n=9)</text>
+  <text x="140" y="662" class="txt">1. Cooperative Group. NEJM 1988;319:902 (CLL, IVIg vs placebo)</text>
+  <text x="140" y="684" class="txt">2. Griffiths H, et al. Blood 1989;73:366 (CLL/NHL, crossover)</text>
+  <text x="140" y="706" class="txt">3. Musto P, et al. Br J Haematol 1995;89:945 (MM, crossover)</text>
+  <text x="140" y="728" class="txt">4. Chapel HM, et al. Br J Haematol 1994;88:209 (CLL, dose comp.)</text>
+  <text x="140" y="750" class="txt">5. Boughton BJ, et al. Clin Lab Haematol 1995;17:75 (CLL)</text>
+  <text x="140" y="772" class="txt">6. Chapel HM, et al. Lancet 1994;343:1059 (MM, UK Group)</text>
+  <text x="140" y="794" class="txt">7. Molica S, et al. Haematologica 1996;81:121 (CLL, low-dose)</text>
+  <text x="140" y="816" class="txt">8. Vacca A, et al. Clin Immunol 2018;191:110 (MM, SCIg)</text>
+  <text x="140" y="838" class="txt">9. McQuilten ZK, et al. Blood Adv 2024;8:1787 (RATIONAL trial)</text>
+</svg>
