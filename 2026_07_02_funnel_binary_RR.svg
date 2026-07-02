@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="410" viewBox="0 0 520 410" font-family="Helvetica, Arial, sans-serif">
+<style>.t{font-size:11px;fill:#111}.b{font-size:13px;font-weight:bold;fill:#111}.s{font-size:10px;fill:#555}</style>
+<text x="20" y="24" class="b">Funnel plot (log RR vs SE, k=5)</text>
+<line x1="294.7" y1="40.0" x2="15.4" y2="360.0" stroke="#999" stroke-dasharray="4 3"/>
+<line x1="294.7" y1="40.0" x2="574.0" y2="360.0" stroke="#999" stroke-dasharray="4 3"/>
+<line x1="294.7" y1="40.0" x2="294.7" y2="360.0" stroke="#999" stroke-dasharray="2 3"/>
+<line x1="90" y1="40" x2="90" y2="360" stroke="#333"/>
+<line x1="90" y1="360" x2="470" y2="360" stroke="#333"/>
+<line x1="85" y1="40.0" x2="90" y2="40.0" stroke="#333"/>
+<text x="80" y="43.0" class="s" text-anchor="end">0.0</text>
+<line x1="85" y1="146.7" x2="90" y2="146.7" stroke="#333"/>
+<text x="80" y="149.7" class="s" text-anchor="end">0.5</text>
+<line x1="85" y1="253.3" x2="90" y2="253.3" stroke="#333"/>
+<text x="80" y="256.3" class="s" text-anchor="end">1.0</text>
+<line x1="85" y1="360.0" x2="90" y2="360.0" stroke="#333"/>
+<text x="80" y="363.0" class="s" text-anchor="end">1.5</text>
+<line x1="90.4" y1="360" x2="90.4" y2="365" stroke="#333"/>
+<text x="90.4" y="378" class="s" text-anchor="middle">0.05</text>
+<line x1="222.1" y1="360" x2="222.1" y2="365" stroke="#333"/>
+<text x="222.1" y="378" class="s" text-anchor="middle">0.2</text>
+<line x1="309.2" y1="360" x2="309.2" y2="365" stroke="#333"/>
+<text x="309.2" y="378" class="s" text-anchor="middle">0.5</text>
+<line x1="375.0" y1="360" x2="375.0" y2="365" stroke="#333"/>
+<text x="375.0" y="378" class="s" text-anchor="middle">1</text>
+<line x1="440.8" y1="360" x2="440.8" y2="365" stroke="#333"/>
+<text x="440.8" y="378" class="s" text-anchor="middle">2</text>
+<text x="280" y="398" class="s" text-anchor="middle">Risk Ratio (log scale)</text>
+<text x="30" y="200" class="s" transform="rotate(-90 30,200)" text-anchor="middle">Standard Error</text>
+<circle cx="285.3" cy="88.4" r="5" fill="#1f5fbf"/>
+<path d="M118.2,338.9 l5,9 l-10,0 z" fill="#d97706"/>
+<circle cx="299.1" cy="112.5" r="5" fill="#1f5fbf"/>
+<circle cx="299.1" cy="134.5" r="5" fill="#1f5fbf"/>
+<path d="M309.2,92.1 l5,9 l-10,0 z" fill="#d97706"/>
+<circle cx="330" cy="44" r="5" fill="#1f5fbf"/><text x="342" y="48" class="t">RCT-DB</text>
+<path d="M330,58 l5,9 l-10,0 z" fill="#d97706"/><text x="342" y="66" class="t">Crossover</text>
+<text x="100" y="52" class="s">Egger: t=-1.51, p=0.228 (n.s.)</text>
+</svg>
